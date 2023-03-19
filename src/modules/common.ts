@@ -1,5 +1,5 @@
 if (process.env.NODE_ENV == 'dev')
-  console.log('============ js-utls/common ============');
+  console.log('============ shochu/common ============');
 
 /**
  * Determines whether the value is number type.

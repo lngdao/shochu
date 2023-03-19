@@ -1,7 +1,7 @@
 {
   "name": "shochu",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Shochu is the Javascript utility library implementing Cocktails",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "homepage": "https://github.com/lngdao/shochu#readme",
@@ -15,7 +15,10 @@
     "build": "rm -rf lib && npx tsc",
     "dev": "NODE_ENV=dev npx nodemon --watch \"src/**\" --ext \"ts,json\" --exec \"ts-node src/index.ts\""
   },
-  "keywords": [],
+  "keywords": [
+    "utility",
+    "modules"
+  ],
   "devDependencies": {
     "@types/jest": "^29.4.0",
     "jest": "^29.5.0",

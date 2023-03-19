@@ -7,7 +7,7 @@ import {
 } from './types/other.type';
 
 if (process.env.NODE_ENV == 'dev')
-  console.log('============ js-utls/other ============');
+  console.log('============ shochu/other ============');
 
 /**
  * Compose function from left to right.

@@ -7,7 +7,7 @@ import {
 import { isValid } from './common';
 
 if (process.env.NODE_ENV == 'dev')
-  console.log('============ js-utls/string ============');
+  console.log('============ shochu/string ============');
 
 /**
  * Remove all chars in string.

@@ -1,7 +1,7 @@
 import { NestedArray } from './types/array.type';
 
 if (process.env.NODE_ENV == 'dev')
-  console.log('============ js-utls/array ============');
+  console.log('============ shochu/array ============');
 
 /**
  * Removes falsy

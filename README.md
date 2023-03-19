@@ -1,4 +1,4 @@
-# Shochu is the Javascript utility library implementing Cocktails
+## Shochu is the Javascript utility library implementing Cocktails
 
 ## Installation
 
