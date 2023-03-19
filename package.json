@@ -1,6 +1,6 @@
 {
   "name": "shochu",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Shochu is the Javascript utility library implementing Cocktails",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
