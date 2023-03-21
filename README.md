@@ -6,6 +6,34 @@
 
 ## Usage
 
+#### -> browser
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- add this line -->
+    <script src="https://cdn.jsdelivr.net/npm/shochu@1.0.3/dist/shochu.min.js"></script>
+    <!-- add this line -->
+  </head>
+
+  <body>
+    <script>
+      const shochu = window.shochu;
+
+      console.log(shochu.isString('Hello World')); // true
+    </script>
+  </body>
+</html>
+```
+
+#### -> nodejs
+
 ```js
 ...
 import shochu, { flatten } from 'shochu' // or with commonJS: const { flatten } = require('shochu')

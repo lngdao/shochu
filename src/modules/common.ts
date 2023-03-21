@@ -1,6 +1,3 @@
-if (process.env.NODE_ENV == 'dev')
-  console.log('============ shochu/common ============');
-
 /**
  * Determines whether the value is number type.
  * @since 1.0.0

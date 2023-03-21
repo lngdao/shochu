@@ -8,5 +8,6 @@ export * from './modules/array';
 export * from './modules/other';
 export * from './modules/string';
 
+const shochu = { commonFn, arrayFn, stringFn, otherFn };
 export { commonFn, arrayFn, stringFn, otherFn };
-export default { commonFn, arrayFn, stringFn, otherFn };
+export default shochu;

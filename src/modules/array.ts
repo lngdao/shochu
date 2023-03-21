@@ -1,8 +1,5 @@
 import { NestedArray } from './types/array.type';
 
-if (process.env.NODE_ENV == 'dev')
-  console.log('============ shochu/array ============');
-
 /**
  * Removes falsy
  * @since 1.0.0

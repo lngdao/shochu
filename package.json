@@ -1,6 +1,6 @@
 {
   "name": "shochu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shochu is the Javascript utility library implementing Cocktails",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -8,23 +8,51 @@
   "author": "Long Dao <dtlong.2101@gmail.com>",
   "license": "MIT",
   "files": [
-    "lib"
+    "lib",
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json"
   ],
   "scripts": {
     "test": "npx jest",
-    "build": "rm -rf lib && npx tsc",
+    "out:tsc": "rm -rf lib && npx tsc",
+    "bundle": "rimraf dist lib && npx rollup -c",
+    "release": "standard-version",
     "dev": "NODE_ENV=dev npx nodemon --watch \"src/**\" --ext \"ts,json\" --exec \"ts-node src/index.ts\""
   },
   "keywords": [
     "utility",
-    "modules"
+    "modules",
+    "cocktails"
   ],
+  "bugs": {
+    "url": "https://github.com/lngdao/shochu/issues"
+  },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
     "@types/jest": "^29.4.0",
+    "cli-spinner": "^0.2.10",
+    "crypto-js": "^4.1.1",
+    "esbuild": "^0.17.12",
     "jest": "^29.5.0",
     "nodemon": "^2.0.21",
+    "rimraf": "^4.4.0",
+    "rollup": "^3.20.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-esbuild": "^5.0.0",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
     "typescript": "^4.9.5"
-  }
+  },
+  "unpkg": "dist/shochu.min.js",
+  "bundlesize": [
+    {
+      "path": "./dist/shochu.min.js",
+      "threshold": "14kB"
+    }
+  ]
 }
