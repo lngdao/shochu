@@ -1,9 +1,9 @@
 name: '🚀 NPM Publish'
 
 on:
-  pull_request:
-    branches:
-      - main
+  label:
+    types:
+      - published
 
 jobs:
   release:
