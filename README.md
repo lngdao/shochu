@@ -18,7 +18,7 @@
     <title>Document</title>
 
     <!-- add this line -->
-    <script src="https://cdn.jsdelivr.net/npm/shochu@1.0.3/dist/shochu.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/shochu/dist/shochu.min.js"></script>
     <!-- add this line -->
   </head>
 
@@ -36,10 +36,11 @@
 
 ```js
 ...
-import shochu, { flatten } from 'shochu' // or with commonJS: const { flatten } = require('shochu')
+import shochu, { isNumber, isString } from 'shochu' // or with commonJS: const { flatten } = require('shochu')
 
 console.log(shochu.stringFn.rmDicretics("ĥĕŀŀő ŵőrŀd")) // output: "hello world"
 console.log(flatten([1, [2, [3, [4]]]])) // [1, 2, 3, 4]
+console.log(isString('Hello World')); // true
 ```
 
 ## Methods
