@@ -104,5 +104,7 @@ dist
 .tern-port
 
 lib
+dist
+out-tsc
 quokka.sample.ts
 quokka.sample.js

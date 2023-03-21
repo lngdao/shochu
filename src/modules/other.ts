@@ -6,9 +6,6 @@ import {
   PipeArgs,
 } from './types/other.type';
 
-if (process.env.NODE_ENV == 'dev')
-  console.log('============ shochu/other ============');
-
 /**
  * Compose function from left to right.
  * @since 1.0.0

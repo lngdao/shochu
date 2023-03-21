@@ -6,9 +6,6 @@ import {
 } from '../config';
 import { isValid } from './common';
 
-if (process.env.NODE_ENV == 'dev')
-  console.log('============ shochu/string ============');
-
 /**
  * Remove all chars in string.
  * @since 1.0.0
